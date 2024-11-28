@@ -1,0 +1,14 @@
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.exe
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.deps.json
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.runtimeconfig.json
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.dll
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.pdb
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.AssemblyInfoInputs.cache
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.AssemblyInfo.cs
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.csproj.CoreCompileInputs.cache
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.dll
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\refint\Ecommerce.dll
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.pdb
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.genruntimeconfig.cache
+C:\Users\ICTS23-25.157\source\repos\Ecommerce\Ecommerce\obj\Debug\net8.0\ref\Ecommerce.dll
