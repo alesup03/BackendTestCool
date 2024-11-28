@@ -1,2 +1,2 @@
-# BackendTestCool
+# BackendTest
 Backend test (Coolshop)
