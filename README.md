@@ -1,13 +1,13 @@
 # Backend Test(Coolshop)
 
-**Ecommerce** è un'applicazione in C# che analizza i dati di un file CSV e genera report utili come:  
+**Ecommerce** è un'applicazione in C# che analizza i dati di un file CSV e genera i seguenti report:
 - La transazione con il totale più alto senza sconto.  
 - La transazione con la quantità di articoli più alta.  
 - La transazione con la differenza di sconto più alta.  
 
 ## Funzionalità
-1. **Lettura di file CSV**: L'applicazione legge un file CSV contenente dati delle transazioni.  
-2. **Elaborazione dei dati**: I dati vengono elaborati per calcolare totali, sconti e differenze.  
+1. **Lettura di file CSV**: L'applicazione legge un file CSV contenente i dati delle varie transazioni
+2. **Elaborazione dei dati**: I dati vengono elaborati per calcolare totali, sconti e differenze tra prezzo unitario e prezzo scontato.  
 3. **Report automatici**: Viene identificata la transazione rilevante per ciascun criterio:  
    - Totale senza sconto più alto.  
    - Quantità più alta.  
