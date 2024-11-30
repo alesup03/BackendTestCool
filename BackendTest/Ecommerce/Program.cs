@@ -1,7 +1,6 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
-using static Ecommerce.Record;
 
 namespace Ecommerce
 {
@@ -9,45 +8,38 @@ namespace Ecommerce
     {
         static void Main(string[] args)
         {
-            //csv path
-            Console.WriteLine("Enter the path of the CSV file:");
+            // Ottieni il percorso del file CSV
+            Console.WriteLine("Inserisci il percorso del file CSV:");
             string filePath = Console.ReadLine();
 
-            //csv existence
+            // Controlla se il file esiste
             if (!File.Exists(filePath))
             {
-                Console.WriteLine($"Error: The file '{filePath}' was not found.");
+                Console.WriteLine($"Errore: Il file '{filePath}' non è stato trovato.");
                 return;
             }
 
-            //csv reading
-            var csvReader = new CsvReader();
-            var records = csvReader.ReadCsv(filePath);
+            // Leggi i record dal CSV
+            var records = Record.ReadCsv(filePath);
 
-            //records check
+            // Controlla se i record sono vuoti
             if (records.Count == 0)
             {
-                Console.WriteLine("The CSV file is empty or does not contain valid data.");
+                Console.WriteLine("Il file CSV è vuoto o non contiene dati validi.");
                 return;
             }
 
-            //report generation
-            var highestTotalReport = new HighestTotal();
-            var highestQuantityReport = new HighestQuantity();
-            var highestDifferenceReport = new HighestDifference();
-            var consolePrinter = new ConsolePrinter();
+            // Stampa il record con l'importo totale più alto
+            var recordWithHighestTotal = Record.GetRecordWithHighestTotal(records);
+            Record.PrintRecord("Record con l'importo totale più alto:", recordWithHighestTotal);
 
-            //record highest total amount
-            var recordWithHighestTotal = highestTotalReport.GetRecord(records);
-            consolePrinter.PrintRecord("Record with the highest total amount:", recordWithHighestTotal);
+            // Stampa il record con la quantità più alta
+            var recordWithHighestQuantity = Record.GetRecordWithHighestQuantity(records);
+            Record.PrintRecord("Record con la quantità più alta:", recordWithHighestQuantity);
 
-            //record highest quantity
-            var recordWithHighestQuantity = highestQuantityReport.GetRecord(records);
-            consolePrinter.PrintRecord("Record with the highest quantity:", recordWithHighestQuantity);
-
-            //record highest discount difference
-            var recordWithMaxDiscountDifference = highestDifferenceReport.GetRecord(records);
-            consolePrinter.PrintRecord("Record with the highest discount difference:", recordWithMaxDiscountDifference);
+            // Stampa il record con la differenza di sconto più alta
+            var recordWithMaxDiscountDifference = Record.GetRecordWithHighestDiscountDifference(records);
+            Record.PrintRecord("Record con la differenza di sconto più alta:", recordWithMaxDiscountDifference);
         }
     }
 }
