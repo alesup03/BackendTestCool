@@ -52,17 +52,20 @@ Il programma analizzerà i dati del file CSV e visualizzerà i seguenti report:
 
 ### Classi Principali
 
-- Program: Main dell'applicazione. Gestisce l'avvio del programma, inclusa la lettura del file CSV, la gestione degli errori e la visualizzazione dei report.
+- **Program**  
+  - Main dell'applicazione.  
+  - Gestisce l'avvio del programma, inclusa la lettura del file CSV, la gestione degli errori e la visualizzazione dei report.
 
-- Record: La classe contenente la logica del programma, con i seguenti metodi:
-   -TotalWithoutDiscount(): Calcola il totale senza sconto (quantità * prezzo unitario).
-   -TotalWithDiscount(): Calcola il totale applicando lo sconto.
-   -DiscountDifference(): Calcola la differenza tra il totale senza sconto e quello con sconto.
-   -ReadCsv(string filePath): Legge il file CSV, valida le righe e restituisce una lista di oggetti Record.
-   -GetRecordWithHighestTotal(List<Record> records): Restituisce il record con il totale senza sconto più alto.
-   -GetRecordWithHighestQuantity(List<Record> records): Restituisce il record con la quantità più alta.
-   -GetRecordWithHighestDiscountDifference(List<Record> records): Restituisce il record con la differenza di sconto più alta.
-   -PrintRecord(string title, Record record): Stampa i dettagli di un record specificato in console.
+- **Record**  
+  - Contiene la logica principale del programma.
+    - `TotalWithoutDiscount()`: Calcola il totale senza sconto (quantità * prezzo unitario).
+    - `TotalWithDiscount()`: Calcola il totale applicando lo sconto.
+    - `DiscountDifference()`: Calcola la differenza tra il totale senza sconto e quello con sconto.
+    - `ReadCsv(string filePath)`: Legge il file CSV, valida le righe e restituisce una lista di oggetti Record.
+    - `GetRecordWithHighestTotal(List<Record> records)`: Restituisce il record con il totale senza sconto più alto.
+    - `GetRecordWithHighestQuantity(List<Record> records)`: Restituisce il record con la quantità più alta.
+    - `GetRecordWithHighestDiscountDifference(List<Record> records)`: Restituisce il record con la differenza di sconto più alta.
+    - `PrintRecord(string title, Record record)`: Stampa i dettagli di un record specificato in console.
 
 ### Gestione degli Errori
 - Verifica che il file CSV esista prima di tentare di leggerlo.
